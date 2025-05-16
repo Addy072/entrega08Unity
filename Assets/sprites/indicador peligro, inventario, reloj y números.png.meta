@@ -1,0 +1,981 @@
+fileFormatVersion: 2
+guid: 0133eef3c2102734abdbefac1ba8d72e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_0"
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 954
+        width: 458
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaf175cedb3e8e42bdadf56e20c3a8f
+      internalID: -164579421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_1"
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 893
+        width: 483
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84a6f12a0995eb4fb661a5973dd4c29
+      internalID: 670549152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_2"
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 880
+        width: 451
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4375581a6b4e7f4aaf806214a1e4829
+      internalID: -1601867746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_3"
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 860
+        width: 453
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8650d501b1216af439f884d66b87c61c
+      internalID: 263787106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_4"
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 692
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a8c4823cadf214aadc877c62a94e92
+      internalID: -976632635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_5"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 692
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cbaec5fb8c8df4c931b01aae5ea6ee
+      internalID: 1949088715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_6"
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 692
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8fe536b80cb834ba4bff036ba3e760
+      internalID: 163360357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_7"
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 692
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b13361c55f40f04ab5e172e69b68e5b
+      internalID: 639860598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_8"
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 692
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4998586be0d16cc4e81b9f4d9010e94e
+      internalID: 1319180309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_9"
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 692
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76edeadd46e42b4fb46c5791ec3e598
+      internalID: 31246955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_10"
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 692
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0879e9b099f92a49a8d74b1aea6a88d
+      internalID: -1218501396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_11"
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 692
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ec19dcc5b4e204eaef748b92e9441e
+      internalID: 2008983180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_12"
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 355
+        width: 250
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5b937dfbbc0a740b7c50be461cbf02
+      internalID: 1229205002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_13"
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 536
+        width: 22
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035d099ba488d14459ecc9d5a1c9ba03
+      internalID: -1201096287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_14"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 536
+        width: 17
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a27b7957f92660448e69fea9683781f
+      internalID: -2143021020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_15"
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 42
+        width: 250
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0e88d4bae6c454188e7444c3640cc7
+      internalID: 1306432269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_16"
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 247
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d043db2e996a5354aa445c7973f87c2f
+      internalID: -2012497243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_17"
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 246
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee3811d27a8b8849828c32de54e2ab3
+      internalID: -99774956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_18"
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 246
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c74f1b7df0f2b40bb4380a148ba308
+      internalID: 532118922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_19"
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 246
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab552e89676f1f40a89fd127dea1473
+      internalID: -1422872130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_20"
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 247
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027a9e44dfc06dd4caa0ce46eef131de
+      internalID: 1964885759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_21"
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 246
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7158cb07276744949883c03494996709
+      internalID: 856733141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_22"
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 246
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20492e5f99cf1c48af48f3462e01df7
+      internalID: -25741902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_23"
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 246
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75fd8dab37c9a34292d22c6dcae7bff
+      internalID: -1662416379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_24"
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 246
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30d5bc45ea02994da34d4ff024b6c18
+      internalID: -1687547976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_25"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 246
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef54aee14a9a4e743ac810538d0e8f70
+      internalID: 121720829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_26"
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 204
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56aabb70b750d947b42866b9629e304
+      internalID: 306336092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_27"
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 203
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6e1d1b5f5102846aa40afadb8a4a60
+      internalID: 574101435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_28"
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 203
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906f8aeaeefdf6c4bbf7d36504807277
+      internalID: -41513644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_29"
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 203
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17b516b83e4ef148a608c3ce3cf8d2b
+      internalID: -358283291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_30"
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 203
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fff7f99d541924d929100da157a032
+      internalID: -1707602453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_31"
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 203
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a257567ad1bd14c8f54c95be4e3667
+      internalID: 1592169436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_32"
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 204
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d38ccad698aa0e448a5e8146f5473dc
+      internalID: 1900494179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_33"
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 203
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6663eb448c4dd47b24fa9211aeeb56
+      internalID: -882939367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_34"
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 203
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd7d3745e31c7044a63fab575668cfd
+      internalID: 1301721934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_35"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 203
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134a8c270dae7f74eb03430723f70b44
+      internalID: -607192647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "indicador peligro, inventario, reloj y n\xFAmeros_36"
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 821
+        width: 472
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bda3f636c2e4344faef17811912b5e7
+      internalID: -1353616314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c6279a8558ce0fb4bbe4be4b69bb22ce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "indicador peligro, inventario, reloj y n\xFAmeros_0": -164579421
+      "indicador peligro, inventario, reloj y n\xFAmeros_1": 670549152
+      "indicador peligro, inventario, reloj y n\xFAmeros_10": -1218501396
+      "indicador peligro, inventario, reloj y n\xFAmeros_11": 2008983180
+      "indicador peligro, inventario, reloj y n\xFAmeros_12": 1229205002
+      "indicador peligro, inventario, reloj y n\xFAmeros_13": -1201096287
+      "indicador peligro, inventario, reloj y n\xFAmeros_14": -2143021020
+      "indicador peligro, inventario, reloj y n\xFAmeros_15": 1306432269
+      "indicador peligro, inventario, reloj y n\xFAmeros_16": -2012497243
+      "indicador peligro, inventario, reloj y n\xFAmeros_17": -99774956
+      "indicador peligro, inventario, reloj y n\xFAmeros_18": 532118922
+      "indicador peligro, inventario, reloj y n\xFAmeros_19": -1422872130
+      "indicador peligro, inventario, reloj y n\xFAmeros_2": -1601867746
+      "indicador peligro, inventario, reloj y n\xFAmeros_20": 1964885759
+      "indicador peligro, inventario, reloj y n\xFAmeros_21": 856733141
+      "indicador peligro, inventario, reloj y n\xFAmeros_22": -25741902
+      "indicador peligro, inventario, reloj y n\xFAmeros_23": -1662416379
+      "indicador peligro, inventario, reloj y n\xFAmeros_24": -1687547976
+      "indicador peligro, inventario, reloj y n\xFAmeros_25": 121720829
+      "indicador peligro, inventario, reloj y n\xFAmeros_26": 306336092
+      "indicador peligro, inventario, reloj y n\xFAmeros_27": 574101435
+      "indicador peligro, inventario, reloj y n\xFAmeros_28": -41513644
+      "indicador peligro, inventario, reloj y n\xFAmeros_29": -358283291
+      "indicador peligro, inventario, reloj y n\xFAmeros_3": 263787106
+      "indicador peligro, inventario, reloj y n\xFAmeros_30": -1707602453
+      "indicador peligro, inventario, reloj y n\xFAmeros_31": 1592169436
+      "indicador peligro, inventario, reloj y n\xFAmeros_32": 1900494179
+      "indicador peligro, inventario, reloj y n\xFAmeros_33": -882939367
+      "indicador peligro, inventario, reloj y n\xFAmeros_34": 1301721934
+      "indicador peligro, inventario, reloj y n\xFAmeros_35": -607192647
+      "indicador peligro, inventario, reloj y n\xFAmeros_36": -1353616314
+      "indicador peligro, inventario, reloj y n\xFAmeros_4": -976632635
+      "indicador peligro, inventario, reloj y n\xFAmeros_5": 1949088715
+      "indicador peligro, inventario, reloj y n\xFAmeros_6": 163360357
+      "indicador peligro, inventario, reloj y n\xFAmeros_7": 639860598
+      "indicador peligro, inventario, reloj y n\xFAmeros_8": 1319180309
+      "indicador peligro, inventario, reloj y n\xFAmeros_9": 31246955
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
