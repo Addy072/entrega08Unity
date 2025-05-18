@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 41454595}
   - component: {fileID: 41454594}
   m_Layer: 0
-  m_Name: color (1)
+  m_Name: amarillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1315,7 +1315,7 @@ GameObject:
   - component: {fileID: 394361765}
   - component: {fileID: 394361764}
   m_Layer: 0
-  m_Name: color (3)
+  m_Name: rojo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2087,6 +2087,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433015787}
   m_CullTransparentMesh: 1
+--- !u!1 &480141892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 480141893}
+  - component: {fileID: 480141894}
+  m_Layer: 5
+  m_Name: personaje
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &480141893
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480141892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1579774414}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &480141894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480141892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c2b3e9b2e460d43bef9861df46fbcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputNombre: {fileID: 959238064}
+  verde: {fileID: 2012124319}
+  amarillo: {fileID: 41454594}
+  naranja: {fileID: 711351278}
+  rojo: {fileID: 394361764}
+  rosa: {fileID: 825230905}
+  violeta: {fileID: 862262548}
+  azuloscuro: {fileID: 916876019}
+  turquesa: {fileID: 1208982708}
+  color: 0
 --- !u!1 &505896188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,7 +2871,7 @@ GameObject:
   - component: {fileID: 711351279}
   - component: {fileID: 711351278}
   m_Layer: 0
-  m_Name: color (2)
+  m_Name: naranja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3200,7 +3258,7 @@ GameObject:
   - component: {fileID: 825230906}
   - component: {fileID: 825230905}
   m_Layer: 0
-  m_Name: color (4)
+  m_Name: rosa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3320,7 +3378,7 @@ GameObject:
   - component: {fileID: 862262549}
   - component: {fileID: 862262548}
   m_Layer: 0
-  m_Name: color (6)
+  m_Name: violeta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3440,7 +3498,7 @@ GameObject:
   - component: {fileID: 916876020}
   - component: {fileID: 916876019}
   m_Layer: 0
-  m_Name: color (5)
+  m_Name: azuloscuro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4148,7 +4206,7 @@ GameObject:
   - component: {fileID: 1208982709}
   - component: {fileID: 1208982708}
   m_Layer: 0
-  m_Name: color (7)
+  m_Name: azulclaro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5478,6 +5536,7 @@ RectTransform:
   - {fileID: 353177120}
   - {fileID: 1076756037}
   - {fileID: 741341239}
+  - {fileID: 480141893}
   m_Father: {fileID: 1976036484}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6743,7 +6802,7 @@ GameObject:
   - component: {fileID: 2012124320}
   - component: {fileID: 2012124319}
   m_Layer: 0
-  m_Name: color
+  m_Name: verde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

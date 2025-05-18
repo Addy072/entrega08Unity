@@ -13,41 +13,92 @@ public class SpriteChanger : MonoBehaviour
     private const string logroMuerteKey = "logromuerte1";
     public Animator Logromuerte;
     public GameObject Gameoverpanel;
+    public float barra = 0;
 
     void Start()
     {
         slider.onValueChanged.AddListener(UpdateSprite);
-        PlayerPrefs.SetInt("numerovidas", 5);
+
+        vidas = PlayerPrefs.GetInt("numerovidas", 5);
+        barra = PlayerPrefs.GetFloat("valorbarravida", 0f);
+
+        slider.value = barra; // recuperamos valor de la barrita de vidas
+        vidastotales();
     }
 
     void Update()
     {
         PlayerPrefs.SetInt("numerovidas", vidas);
         PlayerPrefs.Save();
+        PlayerPrefs.SetFloat("valorbarravida", barra);
+        PlayerPrefs.Save();
+
     }
 
     void UpdateSprite(float value)
     {
-        if (value < 0.1f) targetImage.sprite = sprite1;
-        else if (value < 0.2f) targetImage.sprite = sprite2;
-        else if (value < 0.3f) targetImage.sprite = sprite3;
-        else if (value < 0.4f) targetImage.sprite = sprite4;
-        else if (value < 0.5f) targetImage.sprite = sprite5;
-        else if (value < 0.6f) targetImage.sprite = sprite6;
-        else if (value < 0.7f) targetImage.sprite = sprite7;
-        else if (value < 0.8f) targetImage.sprite = sprite8;
-        else if (value < 0.9f) targetImage.sprite = sprite9;
-        else if (value < 1f) targetImage.sprite = sprite10;
-        else targetImage.sprite = sprite11;
+
+        if (value < 0.1f)
+        {
+            targetImage.sprite = sprite1;
+            barra = value;
+        }
+        else if (value < 0.2f)
+        {
+            targetImage.sprite = sprite2;
+            barra = value;
+        }
+        else if (value < 0.3f)
+        {
+            targetImage.sprite = sprite3;
+            barra = value;
+        }
+        else if (value < 0.4f)
+        {
+            targetImage.sprite = sprite4;
+            barra = value;
+        }
+        else if (value < 0.5f)
+        {
+            targetImage.sprite = sprite5;
+            barra = value;
+        }
+        else if (value < 0.6f)
+        {
+            targetImage.sprite = sprite6;
+            barra = value;
+        }
+        else if (value < 0.7f)
+        {
+            targetImage.sprite = sprite7;
+            barra = value;
+        }
+        else if (value < 0.8f)
+        {
+            targetImage.sprite = sprite8;
+            barra = value;
+        }
+        else if (value < 0.9f)
+        {
+            targetImage.sprite = sprite9;
+            barra = value;
+        }
+        else if (value < 1f)
+        {
+            targetImage.sprite = sprite10;
+            barra = value;
+        }
+        else
+        {
+            targetImage.sprite = sprite11;
+            barra = value;
+        }
 
         if (value == 1f)
         {
             vidas--;
             vidastotales();
         }
-
-        
-
     }
     void vidastotales()
     {
@@ -56,15 +107,25 @@ public class SpriteChanger : MonoBehaviour
                 vida5.gameObject.SetActive(false);
                 break;
             case 3:
+                vida5.gameObject.SetActive(false);
                 vida4.gameObject.SetActive(false);
                 break;
             case 2:
+                vida5.gameObject.SetActive(false);
+                vida4.gameObject.SetActive(false);
                 vida3.gameObject.SetActive(false);
                 break;
             case 1:
+                vida5.gameObject.SetActive(false);
+                vida4.gameObject.SetActive(false);
+                vida3.gameObject.SetActive(false);
                 vida2.gameObject.SetActive(false); 
                 break;
             case 0:
+                vida5.gameObject.SetActive(false);
+                vida4.gameObject.SetActive(false);
+                vida3.gameObject.SetActive(false);
+                vida2.gameObject.SetActive(false);
                 vida1.gameObject.SetActive(false);
                 muerte.gameObject.SetActive(true);
 
@@ -112,4 +173,3 @@ public class SpriteChanger : MonoBehaviour
         slider.value = 0;
     }
 }
-

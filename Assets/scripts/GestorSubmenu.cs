@@ -7,7 +7,7 @@ public class GestorSubmenu : MonoBehaviour
     public Animator Creditos; 
     public Animator Partidas;
     public Animator Salir;
-
+    
 
     public void estado()
     {
@@ -81,7 +81,4 @@ public class GestorSubmenu : MonoBehaviour
         ActualSubmenu = 3;
         estado();
     }
-
-
-
 }

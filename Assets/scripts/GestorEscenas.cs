@@ -27,7 +27,7 @@ public class Gestormenuprincipal : MonoBehaviour
         if (Contra != null && Contra.isFocused)
             return;
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Ajustes();
         }
@@ -35,7 +35,7 @@ public class Gestormenuprincipal : MonoBehaviour
         {
             menu();
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P)) 
         {
             Exit();
         }
