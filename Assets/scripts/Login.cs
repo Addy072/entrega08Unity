@@ -11,6 +11,7 @@ public class Login : MonoBehaviour
     public Button inicio;
     public GameObject iniciofondo;
     public GameObject consejoinicio;
+    public GameObject musicamenu;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,7 +32,7 @@ public class Login : MonoBehaviour
         b.gameObject.SetActive(true);
         c.gameObject.SetActive(true);
         d.gameObject.SetActive(true);
-        
+        musicamenu.gameObject.SetActive(true);
 
     }
 
