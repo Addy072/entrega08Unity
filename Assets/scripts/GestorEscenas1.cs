@@ -35,7 +35,7 @@ public class Gestormenuprincipal : MonoBehaviour
         {
             menu();
         }
-        if (Input.GetKeyDown(KeyCode.P)) 
+        if (Input.GetKeyDown(KeyCode.P))
         {
             Exit();
         }

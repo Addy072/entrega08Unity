@@ -1,3 +1,4 @@
+using System;
 using TreeEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +16,7 @@ public class Seleccionropa : MonoBehaviour
     public int Seleccionpecho = 0;
     public int Seleccionpierna = 0;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,7 +26,7 @@ public class Seleccionropa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void ropaponercara()
@@ -42,12 +44,14 @@ public class Seleccionropa : MonoBehaviour
                 break;
             case 2:
                 cara2.gameObject.SetActive(true);
+                cara3.gameObject.SetActive(false);
                 cara1.gameObject.SetActive(false);
                 
                 break;
             case 3:
                 cara3.gameObject.SetActive(true);
                 cara2.gameObject.SetActive(false);
+                cara4.gameObject.SetActive(false);
                 carader.gameObject.SetActive(true);
                 break;
             case 4:
@@ -86,11 +90,12 @@ public class Seleccionropa : MonoBehaviour
             case 2:
                 pecho2.gameObject.SetActive(true);
                 pecho1.gameObject.SetActive(false);
-                
+                pecho3.gameObject.SetActive(false);
                 break;
             case 3:
                 pecho3.gameObject.SetActive(true);
                 pecho2.gameObject.SetActive(false);
+                pecho4.gameObject.SetActive(false);
                 pechoder.gameObject.SetActive(true);
                 break;
             case 4:
@@ -142,5 +147,15 @@ public class Seleccionropa : MonoBehaviour
     {
         Seleccionpierna--;
         ropaponerpierna();
+    }
+
+    public void guardarropa()
+    {
+        PlayerPrefs.SetInt("cara", Seleccioncara);
+        PlayerPrefs.Save();
+        PlayerPrefs.SetInt("pecho", Seleccionpecho);
+        PlayerPrefs.Save();
+        PlayerPrefs.SetInt("pierna", Seleccionpierna);
+        PlayerPrefs.Save();
     }
 }
