@@ -7,17 +7,18 @@ Puntuación.
 
 • Ventana de inventario, con elementos incluidos (gráficos y texto). Opción operativa de quitar y 
 poner elementos. 
+
 • Tiempo. Hacia atrás, tipo cronómetro. Cuando se acerque al final debe de cambiar de color y 
-cuando llegue a cero emitir un sonido y desencadenar un evento. 
+cuando llegue a cero emitir un sonido y desencadenar un evento. ??
 
 • Mapa reorientable por el jugador. 
 • Animación de misión/nivel completado. 
 7. Las siguientes opciones deben de estar incluidas dentro de alguno o algunos de los submenús, 
 teniendo en cuenta de que tienen que estar en escena o escenas distintas a la del menú principal: 
-• Selección de resolución (Dropdown). 
-• Selección de dificultad. 
+• Selección de resolución (Dropdown). AÑADIR PLAYER PREFS Y AL BRILLO TB
+• Selección de dificultad. ??
 • Selección de idioma (totalmente operativo en todo el UI, Toggle). 
-• Control de brillo. 
+
 
 
 • Tabla de récords de puntuaciones. 

@@ -1,24 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Rendering.PostProcessing;
 
-public class BrightnessControl : MonoBehaviour
+public class BrilloEscena : MonoBehaviour
 {
-    public PostProcessVolume volume;
-    public Slider slider;
-    private AutoExposure exposure;
+    public Image panelNegro; // Referencia al Panel
+    public Slider sliderBrillo; // Referencia al Slider
 
     void Start()
     {
-        volume.profile.TryGetSettings(out exposure);
-        slider.onValueChanged.AddListener(UpdateBrightness);
+        sliderBrillo.onValueChanged.AddListener(CambiarBrillo);
+        sliderBrillo.value = 0; // Empieza con máxima luminosidad (sin oscurecer)
     }
 
-    void UpdateBrightness(float value)
+    void CambiarBrillo(float valor)
     {
-        if (exposure != null)
-        {
-            exposure.keyValue.value = value;
-        }
+        Color colorPanel = panelNegro.color;
+        colorPanel.a = valor; // Modifica solo la transparencia (alpha)
+        panelNegro.color = colorPanel;
     }
+
 }

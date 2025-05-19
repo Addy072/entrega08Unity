@@ -1,21 +1,27 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI; // Necesario para manejar UI
+using UnityEngine.UI;
+using TMPro; // Importa la librería de TextMeshPro
 
 public class CuentaAtrasReloj : MonoBehaviour
 {
     public Transform pivoteSegundero;
     public Transform pivoteMinutero;
-    public Button botonInicio; // Referencia al botón en la UI
-    public float tiempoInicial = 60f; // Tiempo en segundos
+    public Button botonInicio;
+    public TextMeshProUGUI textoTiempo;
+    public float tiempoInicial = 60f;
+    public GameObject eventoCuentaRegresiva;
 
     private float tiempoRestante;
     private bool enCuentaRegresiva = false;
+    private Coroutine cuentaRegresivaCoroutine;
 
     void Start()
     {
         tiempoRestante = tiempoInicial;
-        botonInicio.onClick.AddListener(IniciarCuentaAtras); // Asigna el método al botón
+        botonInicio.onClick.AddListener(IniciarCuentaAtras);
+        ActualizarTexto();
+        eventoCuentaRegresiva.SetActive(false);
     }
 
     void Update()
@@ -30,11 +36,19 @@ public class CuentaAtrasReloj : MonoBehaviour
 
     public void IniciarCuentaAtras()
     {
-        if (!enCuentaRegresiva)
+        textoTiempo.gameObject.SetActive(true);
+        if (cuentaRegresivaCoroutine != null)
         {
-            enCuentaRegresiva = true;
-            StartCoroutine(ContadorRegresivo());
+            StopCoroutine(cuentaRegresivaCoroutine); // Detiene la cuenta atrás anterior
         }
+
+        // Reiniciar valores
+        tiempoRestante = tiempoInicial;
+        enCuentaRegresiva = true;
+        ActualizarTexto();
+        eventoCuentaRegresiva.SetActive(false);
+
+        cuentaRegresivaCoroutine = StartCoroutine(ContadorRegresivo());
     }
 
     IEnumerator ContadorRegresivo()
@@ -43,9 +57,18 @@ public class CuentaAtrasReloj : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
             tiempoRestante--;
+            ActualizarTexto();
         }
 
         Debug.Log("¡Tiempo agotado!");
         enCuentaRegresiva = false;
+        textoTiempo.text = "ERROR";
+        eventoCuentaRegresiva.SetActive(true);
+        textoTiempo.gameObject.SetActive(false);
+    }
+
+    void ActualizarTexto()
+    {
+        textoTiempo.text = tiempoRestante.ToString("00");
     }
 }
