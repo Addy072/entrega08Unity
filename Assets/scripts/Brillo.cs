@@ -4,17 +4,20 @@ using UnityEngine.UI;
 public class BrilloEscena : MonoBehaviour
 {
     public Image panelNegro; // Referencia al Panel
-    public Slider sliderBrillo; // Referencia al Slider
+    public Slider sliderBrillo; // Referencia al Slider (si existe en la escena)
 
     void Start()
     {
         // Cargar el valor guardado y aplicarlo
         float brilloGuardado = PlayerPrefs.GetFloat("BrilloPanel", 0f); // Valor por defecto: sin oscurecer
-        sliderBrillo.value = brilloGuardado;
         AplicarBrillo(brilloGuardado);
 
-        // Agregar Listener para actualizar y guardar el brillo cuando cambie
-        sliderBrillo.onValueChanged.AddListener(GuardarYAplicarBrillo);
+        // Si hay un Slider en la escena, asignar el valor y agregar Listener
+        if (sliderBrillo != null)
+        {
+            sliderBrillo.value = brilloGuardado;
+            sliderBrillo.onValueChanged.AddListener(GuardarYAplicarBrillo);
+        }
     }
 
     void GuardarYAplicarBrillo(float valor)
@@ -26,9 +29,11 @@ public class BrilloEscena : MonoBehaviour
 
     void AplicarBrillo(float valor)
     {
-        Color colorPanel = panelNegro.color;
-        colorPanel.a = valor; // Modifica solo la transparencia (alpha)
-        panelNegro.color = colorPanel;
+        if (panelNegro != null) // Asegurarse de que el panel exista
+        {
+            Color colorPanel = panelNegro.color;
+            colorPanel.a = valor; // Modifica solo la transparencia (alpha)
+            panelNegro.color = colorPanel;
+        }
     }
 }
-
