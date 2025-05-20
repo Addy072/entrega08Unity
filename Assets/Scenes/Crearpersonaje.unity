@@ -1433,6 +1433,9 @@ MonoBehaviour:
   inputContra: {fileID: 0}
   Codigo: {fileID: 0}
   Email: {fileID: 0}
+  Nickname: {fileID: 959238064}
+  dropdownResolucion: {fileID: 0}
+  dropdownDificultad: {fileID: 1256124129}
 --- !u!1 &594510827
 GameObject:
   m_ObjectHideFlags: 0

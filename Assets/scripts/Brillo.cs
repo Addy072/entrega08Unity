@@ -8,15 +8,27 @@ public class BrilloEscena : MonoBehaviour
 
     void Start()
     {
-        sliderBrillo.onValueChanged.AddListener(CambiarBrillo);
-        sliderBrillo.value = 0; // Empieza con máxima luminosidad (sin oscurecer)
+        // Cargar el valor guardado y aplicarlo
+        float brilloGuardado = PlayerPrefs.GetFloat("BrilloPanel", 0f); // Valor por defecto: sin oscurecer
+        sliderBrillo.value = brilloGuardado;
+        AplicarBrillo(brilloGuardado);
+
+        // Agregar Listener para actualizar y guardar el brillo cuando cambie
+        sliderBrillo.onValueChanged.AddListener(GuardarYAplicarBrillo);
     }
 
-    void CambiarBrillo(float valor)
+    void GuardarYAplicarBrillo(float valor)
+    {
+        PlayerPrefs.SetFloat("BrilloPanel", valor);
+        PlayerPrefs.Save();
+        AplicarBrillo(valor);
+    }
+
+    void AplicarBrillo(float valor)
     {
         Color colorPanel = panelNegro.color;
         colorPanel.a = valor; // Modifica solo la transparencia (alpha)
         panelNegro.color = colorPanel;
     }
-
 }
+
