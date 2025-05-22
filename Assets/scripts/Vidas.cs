@@ -1,6 +1,7 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 
 
 public class SpriteChanger : MonoBehaviour
@@ -10,10 +11,18 @@ public class SpriteChanger : MonoBehaviour
     public Slider slider;
     public int vidas = 5;
     public GameObject vida5, vida4, vida3, vida2, vida1, muerte;
+
     private const string logroMuerteKey = "logromuerte1";
     public Animator Logromuerte;
     public GameObject Gameoverpanel;
     public float barra = 0;
+
+    private Color originalColor;
+    public TMP_Text misionmuertetexto;
+    public GameObject misionmuerte;
+    public Animator tablet;
+    public AudioSource audioSource;
+    public AudioClip misioncompletada;
 
     void Start()
     {
@@ -24,6 +33,7 @@ public class SpriteChanger : MonoBehaviour
 
         slider.value = barra; // recuperamos valor de la barrita de vidas
         vidastotales();
+ 
     }
 
     void Update()
@@ -131,13 +141,14 @@ public class SpriteChanger : MonoBehaviour
 
                 if (PlayerPrefs.GetInt(logroMuerteKey, 0) == 1) return; 
 
-                PlayerPrefs.SetInt(logroMuerteKey, 1); // Guardar que el logro ha sucedido
+                PlayerPrefs.SetInt(logroMuerteKey, 1); // Guardar logro
                 PlayerPrefs.Save();
 
                 Logromuerte.Play("Logro");
+                misionmuertea();
 
                 StartCoroutine(EsperadeLogro1());
-                // Aquí puedes ejecutar la animación del logro
+                
                 Debug.Log("¡Logro desbloqueado: Has perdido todas las vidas por primera vez!");
                 break;
         }
@@ -149,6 +160,12 @@ public class SpriteChanger : MonoBehaviour
 
         Debug.Log("¡Logro desbloqueado: Has perdido todas las vidas por primera vez!");
         Logromuerte.Play("LogroOut");
+    }
+    IEnumerator Esperademision()
+    {
+        yield return new WaitForSeconds(5); // Espera 3 segundos antes de continuar
+        misionmuerte.gameObject.SetActive(false);
+        misionmuertetexto.color = originalColor;
     }
     public void ReponerBateria()
     {
@@ -171,5 +188,20 @@ public class SpriteChanger : MonoBehaviour
     void ResetLiveBar()
     {
         slider.value = 0;
+    }
+
+    void misionmuertea()
+    {
+        tablet.Play("tableta"); //Abre la tablet
+        audioSource.PlayOneShot(misioncompletada); //sonido del logro
+        misionmuertetexto.color = Color.green;
+        StartCoroutine(Esperademision());
+
+    }
+
+    public void borrar()
+    {
+        PlayerPrefs.DeleteAll();
+        Debug.Log("td borrao");
     }
 }

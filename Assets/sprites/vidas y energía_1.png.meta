@@ -118,7 +118,7 @@ TextureImporter:
         width: 811
         height: 176
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -127,6 +127,28 @@ TextureImporter:
       bones: []
       spriteID: 91e8d15d63197034c83c32768010dff7
       internalID: -306133481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "vidas y energ\xEDa_1_1"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 536
+        width: 133
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0803843d1a463438d742fc69c9a6ac
+      internalID: 1246763568
       vertices: []
       indices: 
       edges: []
@@ -146,6 +168,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       "vidas y energ\xEDa_1_0": -306133481
+      "vidas y energ\xEDa_1_1": 1246763568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
