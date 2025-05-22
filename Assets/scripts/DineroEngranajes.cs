@@ -15,7 +15,7 @@ public class DineroEngranajes : MonoBehaviour
         ActualizarTexto();
     }
 
-    void ActualizarTexto()
+    public void ActualizarTexto()
     {
         textoDinero.text = dinero.ToString();
         textoEngranajes.text = engranajes.ToString();
@@ -61,7 +61,7 @@ public class DineroEngranajes : MonoBehaviour
         }
     }
     
-    void GuardarProgreso()
+    public void GuardarProgreso()
     {
         PlayerPrefs.SetInt("dinero", dinero);
         PlayerPrefs.SetInt("engranajes", engranajes);

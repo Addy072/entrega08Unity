@@ -12611,6 +12611,7 @@ MonoBehaviour:
   tablet: {fileID: 46864997}
   audioSource: {fileID: 1063400547}
   misioncompletada: {fileID: 8300000, guid: 5c94b32d2a29de14d9249bbbddb4262c, type: 3}
+  gestorObjetos: {fileID: 1890725420}
 --- !u!1 &1093964080
 GameObject:
   m_ObjectHideFlags: 0
@@ -13429,6 +13430,7 @@ RectTransform:
   - {fileID: 1422582801}
   - {fileID: 1695337970}
   - {fileID: 1278118528}
+  - {fileID: 1890725419}
   m_Father: {fileID: 1015788325}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -14458,7 +14460,7 @@ MonoBehaviour:
   - {fileID: 103315380}
   - {fileID: 787966981}
   panelObjeto: {fileID: 1280485560}
-  panelAnimator: {fileID: 0}
+  panelAnimator: {fileID: 1280485564}
 --- !u!1 &1280485560
 GameObject:
   m_ObjectHideFlags: 0
@@ -14470,6 +14472,7 @@ GameObject:
   - component: {fileID: 1280485563}
   - component: {fileID: 1280485562}
   - component: {fileID: 1280485561}
+  - component: {fileID: 1280485564}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -14533,9 +14536,31 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -322, y: -81}
+  m_AnchoredPosition: {x: -672.3, y: -81}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1280485564
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280485560}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac7c1173b365932419f0f0833e8b2ff9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1281183858
 GameObject:
   m_ObjectHideFlags: 0
@@ -19661,6 +19686,57 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1890725418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890725419}
+  - component: {fileID: 1890725420}
+  m_Layer: 5
+  m_Name: Gestormisiones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1890725419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890725418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1165689916}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1890725420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890725418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf628b8eb491aac47b0a340abaa95467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventario: {fileID: 1278118529}
+  dineroEngranajes: {fileID: 1256008479}
+  imagenFlor: {fileID: 306185619, guid: 1e396a5d0cacdfc4ba374241b083fb8e, type: 3}
 --- !u!1 &1891484793
 GameObject:
   m_ObjectHideFlags: 0

@@ -101,7 +101,7 @@ public class Inventario : MonoBehaviour
             nombreObjetoTexto.text = slots[slotIndex].nombreObjeto;
             descripcionObjetoTexto.text = slots[slotIndex].descripcionObjeto;
             panelObjeto.SetActive(true);
-            panelAnimator.Play("PanelShow");
+            panelAnimator.Play("descobj");
         }
     }
 }

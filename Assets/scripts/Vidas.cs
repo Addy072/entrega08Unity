@@ -23,6 +23,7 @@ public class SpriteChanger : MonoBehaviour
     public Animator tablet;
     public AudioSource audioSource;
     public AudioClip misioncompletada;
+    public GestorObjetos gestorObjetos;
 
     void Start()
     {
@@ -166,6 +167,7 @@ public class SpriteChanger : MonoBehaviour
         yield return new WaitForSeconds(5); // Espera 3 segundos antes de continuar
         misionmuerte.gameObject.SetActive(false);
         misionmuertetexto.color = originalColor;
+        
     }
     public void ReponerBateria()
     {
@@ -195,6 +197,7 @@ public class SpriteChanger : MonoBehaviour
         tablet.Play("tableta"); //Abre la tablet
         audioSource.PlayOneShot(misioncompletada); //sonido del logro
         misionmuertetexto.color = Color.green;
+        gestorObjetos.EjecutarAccion();
         StartCoroutine(Esperademision());
 
     }
