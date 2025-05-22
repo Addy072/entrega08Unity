@@ -104,4 +104,30 @@ public class Inventario : MonoBehaviour
             panelAnimator.Play("descobj");
         }
     }
+    public void QuitarObjetoSeleccionado()
+    {
+        for (int i = 0; i < maxSlots; i++)
+        {
+            if (slots[i] != null && nombreObjetoTexto.text == slots[i].nombreObjeto)
+            {
+                
+                slots[i].cantidad--;
+
+                
+                contadorTextos[i].text = slots[i].cantidad.ToString();
+
+                // Si la cantidad llega a 0, eliminar el objeto del inventario
+                if (slots[i].cantidad <= 0)
+                {
+                    slots[i] = null;
+                    imagenes[i].sprite = null;
+                    contadorTextos[i].text = "";
+                }
+
+                return;
+            }
+        }
+
+        Debug.Log("No se pudo quitar el objeto.");
+    }
 }

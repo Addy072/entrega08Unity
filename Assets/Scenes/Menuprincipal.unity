@@ -5867,7 +5867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &920298344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6928,7 +6928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1157090817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8291,16 +8291,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1399030835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0876aeb92cebf124a989eb45de7db93b, type: 3}
+  m_Script: {fileID: 11500000, guid: fe8641e7005ae0a40a147a333a1e0ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inputNombre: {fileID: 189191263}
-  inputContra: {fileID: 1824816426}
-  Codigo: {fileID: 2055224568}
-  Email: {fileID: 1206829698}
-  Nickname: {fileID: 0}
-  dropdownResolucion: {fileID: 0}
-  dropdownDificultad: {fileID: 0}
+  inputContra: {fileID: 2055224568}
+  Codigo: {fileID: 1206829698}
+  Email: {fileID: 1824816426}
 --- !u!1 &1400122020
 GameObject:
   m_ObjectHideFlags: 0
@@ -8466,10 +8463,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1404826123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7187bef8558a9840a605d5fbbe3c75e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3733945441408364c8c1e8580ade82e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 0}
+  paco: 0
 --- !u!1 &1430451897
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 using System.Collections;
 using TMPro;
-using UnityEditorInternal.VR;
+
 using UnityEngine;
 
 public class Consejos : MonoBehaviour
