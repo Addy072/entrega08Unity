@@ -5,14 +5,13 @@ using TMPro;
 
 public class Inventario : MonoBehaviour
 {
-    // Clase para representar cada objeto en el inventario
     public class SlotInventario
     {
         public int idObjeto;
         public int cantidad;
         public Sprite imagenObjeto;
         public string nombreObjeto;
-        public string descripcionObjeto; // Nuevo campo para la descripción
+        public string descripcionObjeto;
 
         public SlotInventario(int id, Sprite imagen, string nombre, string descripcion)
         {
@@ -27,29 +26,53 @@ public class Inventario : MonoBehaviour
     public List<SlotInventario> slots = new List<SlotInventario>();
     public int maxSlots = 24;
 
-    public Button[] botones; // Botones de cada slot
-    public Image[] imagenes; // Imágenes de cada slot
-    public TMP_Text nombreObjetoTexto; // Nombre del objeto en el panel
-    public TMP_Text descripcionObjetoTexto; // Descripción del objeto en el panel
-    public TMP_Text[] contadorTextos; // Contadores de objetos en cada slot
-    public GameObject panelObjeto; // Panel de detalles del objeto
-    public Animator panelAnimator; // Animación del panel
+    public Button[] botones;
+    public Image[] imagenes;
+    public TMP_Text nombreObjetoTexto;
+    public TMP_Text descripcionObjetoTexto;
+    public TMP_Text[] contadorTextos;
+    public GameObject panelObjeto;
+    public Animator panelAnimator;
+
+    // Diccionario con nombres personalizados para los objetos
+    private Dictionary<int, string> nombresObjetos = new Dictionary<int, string>()
+    {
+        { 0, "Flor" },
+        { 1, "Reloj" },
+        { 2, "Corazón" },
+        { 3, "Gota de agua" },
+        { 4, "Bombilla" },
+        { 5, "Detector" }
+    };
+
+    private Dictionary<int, string> descripcionesObjetos = new Dictionary<int, string>()
+    {
+        { 0, "Una hermosa flor fragante." },
+        { 1, "Un reloj que marca el tiempo con precisión." },
+        { 2, "Símbolo de vida y amor." },
+        { 3, "Esencial para la hidratación." },
+        { 4, "Fuente de luz y conocimiento." },
+        { 5, "Dispositivo para detectar señales ocultas." }
+    };
 
     void Start()
     {
         for (int i = 0; i < maxSlots; i++)
         {
-            slots.Add(null); // Inicializa los slots como vacíos
-            int index = i; // Necesario para capturar correctamente el índice en el listener
+            slots.Add(null);
+            int index = i;
             botones[i].onClick.AddListener(() => SeleccionarObjeto(index));
         }
     }
 
-    public void AgregarObjeto(int idObjeto, Sprite imagenObjeto, string nombreObjeto, string descripcionObjeto)
+    public void AgregarObjeto(int idObjeto, Sprite imagenObjeto)
     {
+        string nombreObjeto = nombresObjetos.ContainsKey(idObjeto) ? nombresObjetos[idObjeto] : "Objeto desconocido";
+        string descripcionObjeto = descripcionesObjetos.ContainsKey(idObjeto) ? descripcionesObjetos[idObjeto] : "Sin descripción";
+
         for (int i = 0; i < maxSlots; i++)
         {
-            if (slots[i] != null && slots[i].idObjeto == idObjeto) // Si el objeto ya está en un slot, aumenta la cantidad
+            if (slots[i] != null && slots[i].idObjeto == idObjeto)
             {
                 slots[i].cantidad++;
                 contadorTextos[i].text = slots[i].cantidad.ToString();
@@ -59,7 +82,7 @@ public class Inventario : MonoBehaviour
 
         for (int i = 0; i < maxSlots; i++)
         {
-            if (slots[i] == null) // Si hay espacio vacío, añade el objeto
+            if (slots[i] == null)
             {
                 slots[i] = new SlotInventario(idObjeto, imagenObjeto, nombreObjeto, descripcionObjeto);
                 imagenes[i].sprite = imagenObjeto;
@@ -73,12 +96,12 @@ public class Inventario : MonoBehaviour
 
     void SeleccionarObjeto(int slotIndex)
     {
-        if (slots[slotIndex] != null) // Si hay un objeto en el slot
+        if (slots[slotIndex] != null)
         {
             nombreObjetoTexto.text = slots[slotIndex].nombreObjeto;
-            descripcionObjetoTexto.text = slots[slotIndex].descripcionObjeto; // Mostrar descripción en el panel
+            descripcionObjetoTexto.text = slots[slotIndex].descripcionObjeto;
             panelObjeto.SetActive(true);
-            panelAnimator.Play("PanelShow"); // Animación de apertura del panel
+            panelAnimator.Play("PanelShow");
         }
     }
 }
